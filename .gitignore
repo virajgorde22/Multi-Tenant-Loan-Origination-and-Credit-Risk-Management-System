@@ -1,0 +1,17 @@
+.idea/
+*.iml
+.classpath
+.project
+.settings/
+
+target/
+out/
+*.class
+
+*.log
+
+.env
+application-local.properties
+application-secret.properties
+
+uploads/

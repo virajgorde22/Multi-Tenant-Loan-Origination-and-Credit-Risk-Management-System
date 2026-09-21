@@ -1,0 +1,29 @@
+server:
+  port: 8086
+
+spring:
+  application:
+    name: DOCUMENT-SERVICE
+
+  datasource:
+    url: jdbc:postgresql://localhost:5432/document_db
+    username: postgres
+    password: postgres
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+  servlet:
+    multipart:
+      max-file-size: 10MB
+      max-request-size: 20MB
+
+file:
+  upload-dir: ./uploads
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka
